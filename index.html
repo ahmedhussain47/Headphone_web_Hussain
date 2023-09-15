@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">
+                <img src="Pics/logo.png" style="height: 35px;" alt="">
+            </a>
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">HOME</a>
+                <a href="#team" class="w3-bar-item w3-button"> PRODUCT</a>
+                <a href="#work" class="w3-bar-item w3-button">STORE</a>
+                <a href="#pricing" class="w3-bar-item w3-button">PRICING</a>
+                <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCT</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">STORE</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-black" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Premium Audio Experience</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Flawless, Minimalist Style</span><br>
+            <span class="w3-large">Flawless & Minimalist Design: Less is more! <b>Read More..</b></span>
+            <p><a href="#about"
+                    class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
+                    Check Out Weekly Offers</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-black w3-large" style="padding:24px 48px; ">
+            <i class="fa fa-facebook-official w3-hover-opacity" style="margin-right: 20px;"></i>
+            <i class="fa fa-instagram w3-hover-opacity" style="margin-right: 20px;"></i>
+            <i class="fa fa-snapchat w3-hover-opacity" style="margin-right: 20px;"></i>
+            <i class="fa fa-twitter w3-hover-opacity" style="margin-right: 20px;"></i>
+        </div>
+    </header>
+
+    <div class="main ">
+        <div class="headphoned">
+            <h3>Pure Sound, Pure Style:<br>Your Sonic Sanctuary
+            </h3>
+            <p>Discover pure sound and minimalist style with our headphones. Designed for audio purists, they offer
+                flawless clarity and immersion, redefining your listening experience.</p>
+        </div>
+        <div class="headphonevid">
+            <div id="vidcover">
+            </div>
+            <div id="vidtext">
+                <p>Premium headphones for crystal-clear audio and ultimate comfort</p>
+                <button id="btncheck">Buy!</button>
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="headingdetail ">
+            <h3>Crystal Clear Audio</h3>
+            <p>Indulge in extraordinary audio quality and comfort with our premium headphones, <br> revolutionizing your
+                music listening.</p>
+        </div>
+
+        <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+            <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-1/3 flex-wrap">
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="Pics/headphones-with-music-cds.jpg" />
+                    </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                        src="Pics/headphones-with-music-cds.jpg" />
+                    </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                    <div class="w-full p-1 md:p-2">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                        src="Pics/headphones-with-music-cds.jpg" />
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        <div class="icon ">
+            <h3>Features</h3>
+            <div>
+                <img src="Pics/headphones_2353224.png" alt="">
+                <img src="Pics/microphone-black-shape_25682.png" alt="">
+                <img src="Pics/wave-sound_6707113.png" alt="">
+                <img src="Pics/battery_4092527.png" alt="">
+                <img src="Pics/wireless-charging_3802663.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+
+  
+    <div class="promotional grid w3-margin-bottom">
+    </div>
+
+
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">14+</span>
+          <br>Calling Hours
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">27+</span>
+          <br>Batter Saver Mode
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">19+</span>
+          <br>Happy Music
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">1</span>
+          <br>Charging Time
+        </div>
+      </div>
+
+      
+    <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+        <div class="-m-1 flex flex-wrap md:-m-2">
+            <div class="flex w-1/3 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                        src="Pics/headphones-with-music-cds.jpg" />
+                </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                    src="Pics/headphones-with-music-cds.jpg" />
+                </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                    src="Pics/headphones-with-music-cds.jpg" />
+                </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                    src="Pics/headphones-with-music-cds.jpg" />
+                </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                    src="Pics/headphones-with-music-cds.jpg" />
+                </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                    src="Pics/headphones-with-music-cds.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px;">
+        <div class="w3-row-padding">
+          <div class="w3-col m6">
+            <h3>We know the quality of music.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+            <p><a href="#work" class="w3-button w3-black">25% Off</a></p>
+          </div>
+          <div class="w3-col m6">
+            <img class="w3-image w3-round-large" src="Pics/young-musicians-during-local-event.jpg" height="200">
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="w3-center w3-black w3-padding-64 " style="margin-top: 100px;">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity" style="margin-left:30px;margin-right: 30px;"></i>
+          <i class="fa fa-instagram w3-hover-opacity" style="margin-right: 30px;"></i>
+          <i class="fa fa-snapchat w3-hover-opacity" style="margin-right: 30px;"></i>
+          <i class="fa fa-twitter w3-hover-opacity" style="margin-right: 30px;"></i>
+        </div>
+        <p>Made by <a href="#" >Hussain</a></p>
+      </footer>
+
+</body>
+
+</html>
